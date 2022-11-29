@@ -2,9 +2,9 @@ import express from 'express'
 import cors from 'cors'
 import mongoose from "mongoose";
 // mongoose.connect('mongodb://localhost:27017/tuiter');
-// const CONNECTION_STRING = process.env.DB_CONNECTION_STRING;
-// mongoose.connect(CONNECTION_STRING);
-mongoose.connect('mongodb+srv://kaitlynwong1023:Pepperthemalshi23@cluster0.kusgwyu.mongodb.net/?retryWrites=true&w=majority');
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING;
+mongoose.connect(CONNECTION_STRING);
+// mongoose.connect('mongodb+srv://kaitlynwong1023:Pepperthemalshi23@cluster0.kusgwyu.mongodb.net/?retryWrites=true&w=majority');
 
 import HelloController
   from "./controllers/hello-controller.js"
